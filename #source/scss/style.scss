@@ -1,0 +1,169 @@
+//Добавить ссылку на шрифт!!!
+
+
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: Calibri;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    color: #221E29;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+//Cекция task start
+.task{
+    background: radial-gradient(375.75% 121.14% at 0% 0%, rgba(199, 185, 240, 0.60) 0%, rgba(199, 200, 208, 0.00) 100%), radial-gradient(385.69% 123.68% at 100.00% 0.00%, rgba(199, 185, 240, 0.60) 0%, rgba(199, 200, 208, 0.00) 100%), #FFF;
+} 
+
+.task__wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    @media (max-width: 2400px) {
+        max-width: 1483px;
+    }
+    @media (max-width: 1772px) {
+        max-width: 994px;
+    }
+    @media (max-width: 1321px) {
+        max-width: 496px;
+    } 
+}
+
+//Swiper слайдер start
+.swiper {
+    width: 100%;
+    height: auto;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    padding-left: 36px;
+    padding-right: 36px;
+    margin: 0px auto;
+    @media (max-width: 2400px) {
+        max-width: 1483px;
+    }
+    @media (max-width: 1772px) {
+        max-width: 994px;
+    }
+    @media (max-width: 1321px) {
+        max-width: 568px;
+    }
+    @media (max-width: 954px) {
+        padding-top: calc(14px + (72 - 14) * ((100vw - 400px) / (954 - 400)));
+        padding-bottom: calc(14px + (72 - 14) * ((100vw - 400px) / (954 - 400)));
+    }
+    @media (max-width: 399px) {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+}
+
+.task-slider__image {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+    border-radius: 30px 15px;
+    border: 2px solid #221E29;
+    background: #FFF;
+    
+}
+
+.task-slider__border {
+    width: 100%;
+    border: 1px solid #C7C8D0;
+    margin-bottom: 16px;
+}
+
+.task-slider__title {
+    padding-bottom: 16px;
+}
+
+.task-slider__link {
+    justify-content: flex-end;
+    p {
+        font-size: 16px;
+    }
+}
+//Swiper слайдер end
+
+//Кнопки переключения start
+.task__button {
+    width: 78px;
+    height: 78px;
+    @media (max-width: 954px) {
+        width: calc(35px + (78 - 35) * ((100vw - 400px) / (954 - 400)));
+        height: calc(35px + (78 - 35) * ((100vw - 400px) / (954 - 400)));
+    }
+    @media (max-width: 399px) {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.task__button::after {
+    color: rgba(199, 185, 240, 0);
+}
+
+.swiper-button-prev {
+    left: -114px;
+    background-image: url(../img/svg/task-2.svg);
+    background-repeat: no-repeat;
+    background-size: 78px 78px;
+    @media (max-width: 954px) {
+        left: calc(10px + (-114 - 10) * ((100vw - 500px) / (954 - 500)));
+        background-size: calc(35px + (78 - 35) * ((100vw - 400px) / (954 - 400))) calc(35px + (78 - 35) * ((100vw - 400px) / (954 - 400)));
+    }
+    @media (max-width: 499px) {
+        left: 10px;
+        
+    }
+    @media (max-width: 399px) {
+        left: 14px;
+        background-size: 35px 35px;
+    }
+}
+
+.swiper-button-next {
+    right: -114px;
+    background-image: url(../img/svg/task-1.svg);
+    background-repeat: no-repeat;
+    background-size: 78px 78px;
+    @media (max-width: 954px) {
+        right: calc(10px + (-114 - 10) * ((100vw - 500px) / (954 - 500)));
+        background-size: calc(35px + (78 - 35) * ((100vw - 400px) / (954 - 400))) calc(35px + (78 - 35) * ((100vw - 400px) / (954 - 400)));
+    }
+    @media (max-width: 499px) {
+        right: 10px;
+    }
+    @media (max-width: 399px) {
+        right: 14px;
+        background-size: 35px 35px;
+    }
+}
+//Кнопки переключения end
+
+//Cекция task end
