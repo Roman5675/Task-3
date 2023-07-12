@@ -133,7 +133,7 @@ img{
 
 .swiper-button-prev {
     left: -114px;
-    background-image: url(../img/svg/task-2.svg);
+    background-image: url(../img/svg/task-2.png);
     background-repeat: no-repeat;
     background-size: 78px 78px;
     @media (max-width: 954px) {
@@ -145,6 +145,7 @@ img{
         
     }
     @media (max-width: 399px) {
+        background-image: url(../img/svg/task-3.png);
         left: 14px;
         background-size: 35px 35px;
     }
@@ -152,7 +153,7 @@ img{
 
 .swiper-button-next {
     right: -114px;
-    background-image: url(../img/svg/task-1.svg);
+    background-image: url(../img/svg/task-1.png);
     background-repeat: no-repeat;
     background-size: 78px 78px;
     @media (max-width: 954px) {
@@ -163,6 +164,7 @@ img{
         right: 10px;
     }
     @media (max-width: 399px) {
+        background-image: url(../img/svg/task-4.png);
         right: 14px;
         background-size: 35px 35px;
     }
