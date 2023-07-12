@@ -208,11 +208,6 @@ img {
   text-align: justify;
 }
 
-.task-slider__link {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
 .task-slider__link p {
   font-size: 16px;
   color: #763D9E;
