@@ -92,16 +92,19 @@ img{
     
 }
 
-.task-slider__border {
-    width: 100%;
-    border: 1px solid #C7C8D0;
-    margin-bottom: 16px;
-}
 
 .task-slider__title {
     padding-bottom: 16px;
 }
 
+.task-slider__border {
+    width: 100%;
+    border: 1px solid #C7C8D0;
+    margin-bottom: 16px;
+}
+.task-slider__text {
+    text-align: justify;
+}
 .task-slider__link {
     justify-content: flex-end;
     p {
